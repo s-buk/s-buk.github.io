@@ -1,0 +1,468 @@
+html,
+body{
+	margin: 0;
+	padding: 0; 
+    font-family: 'Segoe UI', 'Tahoma', 'Verdana', sans-serif;
+    scroll-behavior: smooth;
+    background-image: url('images/textura.png');
+    background-attachment: fixed;
+
+}
+
+.menuHeader{
+    /* position: fixed; */
+    /* top: 0; */
+    z-index: 111111;
+    background-image: url('images/textura.png');
+    height: 210px;
+    width: 100%;
+    
+    
+}
+
+.logo{
+
+    height: 200px;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    right: 200px; */
+    justify-content: center;
+    z-index: 11;
+    
+}
+
+
+
+.menuHeader img{
+    position: relative;
+    z-index: 2;
+    /* top: -250px;
+    left: 130px; */
+    display: inline-block;
+    transform: scale(0.7, 1.1);
+
+}
+
+
+.logoText, .logoText p{
+    position: relative;
+    top: 40px;
+    right: 100px;
+    text-transform: uppercase;
+   
+    font: bold 40px Tahoma;
+    display: inline-block;
+    margin: 0;
+    text-align: right;
+    width: 40%;
+}
+
+.line{
+    /* position: relative;
+    top: -306px; */
+    z-index: 1;
+    background-image: url('images/headerLine.png');
+    background-repeat: repeat-x;
+    height: 70px;
+    transform: scale(1,0.6) translate(0,-70px);
+    
+}
+
+.contentHeader{
+    
+    width: 70%;
+    margin: 20px auto;
+    min-height: calc(100% - 58px);
+    
+    /* position: relative;
+    left: 80px; */
+}
+
+.contentText{
+    
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+    
+}
+
+
+.footer{
+    width: 70%;
+    height: 58px;
+    /* position: absolute;
+    bottom: 0px; */
+    margin: 40px auto;
+    
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.507);
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.menu{
+    
+    display: flex;
+    
+    justify-content: flex-end;
+    background-color: rgba(255, 255, 255, 0.555);
+    
+    height: 50px;
+    padding: 0%;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    
+}
+    
+
+.menu li{
+   
+    display: flex;
+    align-items: center;
+    
+    
+    list-style: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.menu a{
+    padding: 20px;
+    
+    font: bold 16px Arial;
+    text-decoration: none;
+    color: gray;
+    
+}
+
+.menu a:hover{
+    background-color: rgba(255, 0, 0, 0.856);
+    color: white;
+    /* transform: scale(1.15); */
+    font-size: 1.1em;
+    transition: 0.4s;
+    
+}
+
+h1{
+    text-align: center;
+    color: brown;
+    text-transform: uppercase;
+    font-size: 1.8em;
+}
+
+h1:before {
+    content: url('images/sun.png') " ";
+    
+}
+
+h1:after {
+    content:  " " url('images/sun.png');
+}
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    transform: scale(1.1,1.2);
+    text-decoration-line: underline;
+       
+}
+
+p{
+    text-align: center;
+}
+
+
+
+/* .contentPages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+} */
+
+a img{
+    max-width: 500px;
+}
+
+.pic{
+    display: block;
+    text-align: center;
+    
+    
+}
+
+.pic img:hover{
+    border: 1px solid rgba(255, 0, 0, 0.541);
+        
+}
+
+/* a img:hover{
+    opacity: 0.6;
+} */
+
+.midi{
+   margin: 10px;
+    font: bold 20px  arial;
+    text-decoration: none;
+    color: brown;
+    
+    /* position: relative;
+    z-index: 33;
+    right: -120px;
+    top: -80px; */
+
+
+}
+
+.midi:hover{
+    text-decoration: underline;
+    color: red;
+    
+}
+
+.bottomNav{
+    
+    text-align: center;
+}
+
+.nav{
+    font-size: 2.2em;
+    color: brown;
+}
+
+.nav>i{
+    margin: 20px 10px;
+}
+
+
+.nav:hover{
+   color: red;
+    
+}
+
+.footerText{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+/* .contentFooter{
+    display: flex;
+    justify-content: center;
+} */
+
+.formLink{
+    margin: auto 0;  
+}
+
+.formLink a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: brown;
+}
+
+.formLink a:hover{
+    color: red;
+}
+
+form{
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+input,textarea{
+    margin: 20px;
+}
+
+.message{
+    height: 170px;
+}
+
+button{
+    font-size: 1.2em;
+    position: relative;
+    left: 200px;
+    top: -25px;
+    cursor: pointer;
+}
+
+.mainPage{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.folkText{
+    margin: 0%;
+    white-space: pre-wrap;
+    text-align: justify;
+    position: relative;
+    left: -134px;
+   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    
+}
+ 
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 1154px){
+    .logoText{
+        position: relative;
+        top: 10px;
+        left: -60px;
+    }
+
+    .logo img{
+        position: relative;
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .contentHeader, nav,.footer{  
+        width: 98%;         
+    }
+
+    .menu{
+        display: flex;    
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .menu{
+        
+    
+        display: flex;
+        flex-direction: column;
+        
+        align-items: stretch;
+       
+        height: 150px;
+       
+        
+        border-radius: 0px;
+         
+    }
+
+    .contentText,.footer{  
+        border-radius: 0px;
+          
+    }
+
+    .menu li{
+   
+        border-radius: 0px;
+       
+    }
+    
+    .menu a{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        
+        
+        font: bold 16px Arial;
+        text-decoration: none;
+        color: gray;
+        
+    }
+
+
+    .contentHeader, nav,.footer{  
+        width: 100%;
+          
+    }
+
+    .folkText{
+        font-size: 0.98em;
+        position: relative;
+        left: -110px;
+    }
+
+    form{
+        width: 100%;
+        align-items: center;
+        padding: 0%;
+    }
+
+    button{
+        position: relative;
+        top: -10px;
+        left: 290px;
+    }
+
+}
+
+@media screen and (max-width: 560px){
+    .logoText{
+        font: bold 30px Tahoma;
+        position: relative;
+        top: 30px;
+        left: -90px;
+    }
+
+    .logo img{
+        transform: scale(0.5, 0.9);
+        position: relative;
+        left: -30px;
+    }
+    
+    a img{
+        max-width: 320px;
+    }
+
+    h1,h2,.midi,.folkText,.nav,.footerText,.mainPage,.formLink>a{
+        font-size: 0.9em;
+    }
+
+    .folkText{
+        position: relative;
+        left: -100px;
+    }
+
+    h1:before {
+        
+        content:none;
+        
+    }
+    
+    h1:after {
+        content: none;
+    }
+    .menu a{       
+        font: bold 13px Arial;
+    }
+
+    .menu a:hover{       
+        font-size: 1em;       
+    }
+
+    button{
+        position: relative; 
+        left: 160px;
+    }
+}

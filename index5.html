@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/ico">
     <meta name="description" content="Белорусский фольклор для детей: тексты, ноты, midi">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    crossorigin="anonymous">
 
 </head>
 
@@ -44,34 +44,24 @@
 
         </ul>
     </nav>
+ 
+    <div class="contentHeader" id="block1">
 
-    <article>
-        <div class="contentHeader" id="block1">
-
-            <div class="contentText">
-
-                <section>
-                    <h1>Прывітанне ўсім добрым людзям!</h1>
-
-                    <p class="mainPage">
-                        Гэты сайт прысвечаны беларускаму дзіцячыму фальклору. <br>Тут вы знойдзеце фальклорныя тэксты,
-                        нотныя запісы мелодый, а таксама MIDI.<br>
-                        Кантэнт створаны з дапамогай кнігі “Дзіцячы фальклор”, выдадзенай у 1972 годзе ў Мінску.
-                        Складальнікі кнігі: Г.А.
-                        Барташэвіч — тэксты; В.І. Ялатаў — музычная частка.
-                    </p>
-
-                </section>
-
-                <div class="bottomNav">
-                    <a class="nav" href="index.html" title="Уверх"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-                    <a class="nav" href="index1.html" title="Далей"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                </div>
-
-            </div>
-
+        <div class="contentText formText" >
+            <h1>Зваротная сувязь</h1>
+            <form method="POST" action="http://temp-eti.tmweb.ru/taxi/mail.php">
+                Iмя <input type="text" id="FirstName" maxlength="40">
+                Прозвiшча<input type="text" id="SecondName" maxlength="40">
+                e-mail<input type="text" id="adress" maxlength="40">
+                Ваша паведамленне<textarea wrap="soft" class="message" type="text" id="message" maxlength="600"></textarea>              
+                <input type="hidden" name="project_name" value="Site Name">
+                <input type="hidden" name="admin_email" value="s-buk@yandex.ru">
+                <input type="hidden" name="form_subject" value="Form Subject">
+            </form>
+            <button>Даслаць</button>
         </div>
-    </article>
+
+    </div>
 
     <footer>
         <div class="footer">
@@ -86,6 +76,8 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
