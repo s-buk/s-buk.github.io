@@ -376,7 +376,8 @@ section{
     .menu li{
    
         border-radius: 0px;
-       
+        
+        text-align:center; 
     }
     
     .menu a{
@@ -465,4 +466,6 @@ section{
         position: relative; 
         left: 160px;
     }
+
+    
 }
